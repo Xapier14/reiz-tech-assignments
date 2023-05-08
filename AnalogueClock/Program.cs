@@ -24,9 +24,6 @@ Console.WriteLine("Lesser angle difference: {0}", lesserAngle);
 
 static double CalculateLesserDifference(double angle1, double angle2)
 {
-    // swap if angle2 is greater or equal
-    if (angle1 > angle2)
-        (angle1, angle2) = (angle2, angle1);
     // get absolute difference
     var difference = Math.Abs(angle1 - angle2);
     // if angle is greater angle, get lesser by subtracting with 360 deg.

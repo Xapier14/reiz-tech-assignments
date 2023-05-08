@@ -1,6 +1,6 @@
 # Reiz Tech Assignments
 
-My answers for their work assignment as part of my application for a .NET Developer internsip position.
+My answers for their work assignment as part of my application for a .NET Developer internship position.
 
 ## Assignment 1 - Analogue Clock
 

@@ -5,7 +5,7 @@ var hours = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input Minutes: ");
 var minutes = Convert.ToInt32(Console.ReadLine());
 
-const double hourAngle = 360.0 / 12.0; // angle per section of clock
+const double hourAngle = 360.0 / 12.0; // angle per hour-section of clock
 
 // sanitize inputs and keep within valid input range while offseting hour by 1
 hours = Math.Max(1, hours) % 12;

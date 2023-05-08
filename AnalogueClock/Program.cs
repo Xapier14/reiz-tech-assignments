@@ -11,7 +11,7 @@ const double hourAngle = 360.0 / 12.0; // angle per section of clock
 hours = Math.Max(1, hours) % 12;
 minutes = Math.Max(0, Math.Min(59, minutes));
 
-// get initial angle by multiplying 1 clock-hour angleunit by zero-based hour
+// get initial angle by multiplying 1 clock-hour angle-unit by zero-based hour
 var shortHandAngle = hours * hourAngle;
 // apply finer offset based on minute/longHand-clock ratio
 shortHandAngle += minutes * hourAngle / 60.0;

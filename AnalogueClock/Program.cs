@@ -7,7 +7,7 @@ var minutes = Convert.ToInt32(Console.ReadLine());
 
 const double hourAngle = 360.0 / 12.0; // angle per hour-section of clock
 
-// sanitize inputs and keep within valid input range while offseting hour by 1
+// sanitize inputs and keep within valid input range
 hours = Math.Max(1, hours) % 12;
 minutes = Math.Max(0, Math.Min(59, minutes));
 
@@ -19,7 +19,8 @@ shortHandAngle += minutes * hourAngle / 60.0;
 var longHandAngle = minutes * 360.0 / 60.0;
 
 var lesserAngle = CalculateLesserDifference(shortHandAngle, longHandAngle);
-Console.WriteLine("Angle difference: {0}", lesserAngle);
+Console.WriteLine("Your sanitized input: hour={0}, minute={1}", hours, minutes);
+Console.WriteLine("Lesser angle difference: {0}", lesserAngle);
 
 static double CalculateLesserDifference(double angle1, double angle2)
 {
